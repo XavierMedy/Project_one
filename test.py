@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv("dummy_job_dataset.csv")
 
 
-filtered_df = df[df["category_confidence"] >= 4]
+filtered_df = df[df["category_confidence"] >= 4] #keeps the rows with confidence score of 4 or higher
 
 
 grouped = filtered_df.groupby("canonical_title")
